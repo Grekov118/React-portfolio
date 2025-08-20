@@ -1,0 +1,36 @@
+.header h1 {
+    font-size: 75px
+}
+
+.header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    transition: .6s linear
+}
+
+.header.sticky {
+    background: #ffffff1a;
+    box-shadow: var(--box-shadow)
+}
+
+.header .logo {
+    color: var(--first-color);
+    font-weight: 600
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .4s linear;
+    padding: 18px 0
+}
+
+.header.sticky .header-wrapper {
+    padding: 10px 0
+}

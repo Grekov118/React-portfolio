@@ -1,0 +1,12 @@
+export {default as Header} from './header/Header'
+export {default as About} from './about/About'
+export {default as Clients} from './clients/Clients'
+export {default as Contact} from './contact/Contact'
+export {default as Footer} from './footer/Footer'
+export {default as Home} from './home/Home'
+export {default as Portfolio} from './portfolio/Portfolio'
+export {default as GetIn} from "./getIn/GetIn"
+export {default as Services} from './services/Services'
+export {default as Skills} from './skills/Skills'
+export {default as ScrollToTop} from "./scrollToTop/ScrollToTop"
+export {default as ThemeToggle} from "./themeToggle/ThemeToggle"
