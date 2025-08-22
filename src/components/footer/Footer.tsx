@@ -1,5 +1,5 @@
 import './Footer.css'
-import { infoLinks,followLinks } from '../../data/footerData'
+import { links} from '../../data/footerData'
 import FooterGroup from './FooterGroup'
 
 function Footer() {
@@ -13,10 +13,10 @@ function Footer() {
                 <a href="#about">About me</a>
             </div>
             <div className="hr"></div>
-						<FooterGroup title="More" links={infoLinks}/>
+						<FooterGroup title="More" links={links.info}/>
             
             <div className="hr"></div>
-						<FooterGroup title="Follow" links={followLinks} isSocial/>
+						<FooterGroup title="Follow" links={links.follow} isSocial/>
             
         </div>
         <p className="footer-copyright">© <span className="year">{currentYear}</span> by Coding Snow. All rights reserved.</p>

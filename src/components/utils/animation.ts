@@ -1,4 +1,6 @@
-export const iconAnimVariants = {
+import { Variants } from "framer-motion";
+
+export const iconAnimVariants:Variants = {
 	hidden: {
 		x: 50,
 		opacity: 0
@@ -15,7 +17,7 @@ export const iconAnimVariants = {
 }
 
 
-export const motionVariants = {
+export const motionVariants:Variants = {
 	hidden: {
 		x: -50,
 		opacity: 0

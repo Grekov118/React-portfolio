@@ -1,7 +1,15 @@
+import { ServiceType } from "../../data/services";
+
 import { CiCircleCheck } from "react-icons/ci";
 import { FaXmark } from "react-icons/fa6";
 
-function ServicesModal({ item, isActive, closeModal }) {
+interface ServicesModalProps {
+  item: ServiceType;
+  isActive: boolean;
+  closeModal: () => void;
+}
+
+function ServicesModal({ item, isActive, closeModal }:ServicesModalProps) {
   return (
     <div className={`service-modal ${isActive ? "active" : null}`}>
       <div className="service-modal-body">

@@ -3,7 +3,6 @@ import { clientData } from "../../data/clientData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
-// import { FaChevronRight,FaChevronLeft } from "react-icons/fa";
 import SecTitle from "../secTitle/SecTitle";
 
 function Clients() {

@@ -1,11 +1,18 @@
-import { FaArrowRightLong } from "react-icons/fa6";
-import ServicesModal from "./ServicesModal";
 import { useState } from "react";
+import ServicesModal from "./ServicesModal";
+import { ServiceType } from "../../data/services";
 
-function ServicesItem({ services }) {
-  const [activeIdx, setActiveIdx] = useState(null);
+import { FaArrowRightLong } from "react-icons/fa6";
 
-  const openModal = (index) => {
+
+interface ServicesItemProps {
+  services: ServiceType[];
+}
+
+function ServicesItem({ services }:ServicesItemProps) {
+  const [activeIdx, setActiveIdx] = useState<number | null>(null);
+
+  const openModal = (index:number) => {
     setActiveIdx(index);
   };
 

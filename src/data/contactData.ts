@@ -1,3 +1,4 @@
+import { IconType } from "react-icons";
 import {
 	FaPhone,
 	FaEnvelope
@@ -6,7 +7,15 @@ import {
 	FaLocationDot
 } from "react-icons/fa6";
 
-export const contactData = [
+interface ContactType {
+		id: number,
+		icon: IconType,
+		title: string,
+		value: string,
+		link: string
+}
+
+export const contactData:ContactType[] = [
 	{
 		id: 1,
 		icon: FaPhone,

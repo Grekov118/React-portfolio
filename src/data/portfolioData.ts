@@ -7,7 +7,15 @@ import {
 	portfImg6
 } from "../images";
 
-export const portfolioData = [{
+interface PortfolioType {
+id:number,
+title: string,
+category: string,
+imgSrc:string,
+description:string
+}
+
+export const portfolioData:PortfolioType[] = [{
 		id: 1,
 		title: "UI/UX Design",
 		category: "Youtube",

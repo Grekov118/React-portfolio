@@ -3,8 +3,14 @@ import "./SecTitle.css";
 // eslint-disable-next-line
 import { motion } from "motion/react";
 
+interface SecTitleProps {
+  title: string;
+  subtitle: string;
+}
 
-function SecTitle({ title, subtitle }) {
+
+
+function SecTitle({ title, subtitle }: SecTitleProps) {
   return (
     <>
       <motion.h2
